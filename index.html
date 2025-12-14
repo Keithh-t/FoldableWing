@@ -367,7 +367,7 @@
     }
     .videoCard:hover .play{transform: scale(1.04)}
     .meta{padding: 14px 16px 16px}
-    .meta h3{margin:0 0 6px; font-size:14px}
+    .meta h3{margin:0 0 6px; font-size:14px; color:var(--text)}
     .meta p{margin:0; color:var(--muted); font-size:13px; line-height:1.55}
 
     /* ====== Modal player ====== */
@@ -496,6 +496,7 @@
           <a class="chip" href="#story">Story</a>
           <a class="chip" href="#design">Design</a>
           <a class="chip" href="#plan">Plan</a>
+          <a class="chip" href="#analysis">Analysis</a>
           <a class="chip" href="#media">Media</a>
           <a class="chip" href="#team">Team</a>
         </nav>
@@ -524,9 +525,9 @@
                   <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6zm4 10 3-3 2 2 3-3 4 4H8z" fill="currentColor"/></svg>
                   View gallery
                 </button>
-                <a class="btn ghost" href="https://drive.google.com/file/d/1gA13fGIcZi83MZ1MW8vezeq-4QADIIhH/view?usp=sharing" target="_blank" rel="noopener">
+                <a class="btn ghost" href="https://drive.google.com/drive/folders/1MoFphe4Oox3IFugKBD0qpfFRMDI1AX7V" target="_blank" rel="noopener">
                   <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 3v10m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  Download paper (PDF)
+                  Project Drive
                 </a>
               </div>
 
@@ -610,7 +611,7 @@
             <div class="pad">
               <div class="mini">Design concept</div>
               <h3 class="title">Two things matter most: predictable motion + deployed stiffness.</h3>
-              <p class="muted">Instead of showing everything at once, hover these feature cards to reveal details.</p>
+              <p class="muted">Four key principles guide the origami-inspired wing design for reliable folding and flight performance.</p>
 
               <div class="rail" style="margin-top:14px">
                 <div class="feature">
@@ -659,7 +660,7 @@
               </div>
 
               <div class="muted" style="margin-top:12px; font-size:13px">
-                Add your best prototype photos in the Gallery section—this page is designed so visuals “carry” the story.
+                Our iterative prototyping process combined digital fabrication with hands-on assembly to validate design concepts and refine hinge mechanisms.
               </div>
             </div>
           </div>
@@ -684,18 +685,188 @@
       </div>
     </section>
 
+    <!-- Analysis -->
+    <section id="analysis">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="kicker"><span class="dot"></span> Analysis</div>
+          <h2 class="h1" style="font-size: clamp(28px, 3.3vw, 44px)">Comprehensive computational analysis of wing performance.</h2>
+          <p class="lead">We conducted aerodynamic and structural simulations on Miura-Ori and Accordion wing patterns to evaluate efficiency, safety, and feasibility for UAV applications.</p>
+        </div>
+
+        <div class="grid" style="margin-top:18px">
+          <div class="card reveal">
+            <div class="pad">
+              <div class="mini">Simulation workflow</div>
+              <h3 class="title">Multi-domain analysis pipeline</h3>
+              <p class="muted">Four-stage computational workflow from geometry extraction to comparative evaluation.</p>
+
+              <div class="rail" style="margin-top:14px">
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>Geometry Extraction</strong>
+                  <p>Parse CAD models to extract panels, fold angles, and wing metrics—span, chord, aspect ratio.</p>
+                </div>
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>CFD Simulation</strong>
+                  <p>Aerodynamic analysis using thin airfoil theory with finite wing corrections—sweep AoA -5° to 15°.</p>
+                </div>
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>FEA Analysis</strong>
+                  <p>Structural integrity assessment under flight loads—deflection, stress, and safety factors.</p>
+                </div>
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>Folding Kinematics</strong>
+                  <p>Deployment simulation with collision detection and torque requirements for passive folding.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="pad">
+              <div class="mini">Flight conditions</div>
+              <h3 class="title">Representative cruise parameters</h3>
+              <p class="muted">Analysis conducted at small UAV operational conditions.</p>
+
+              <div class="pills" style="margin-top:12px">
+                <span class="pill">V = 15 m/s</span>
+                <span class="pill">Re ≈ 51,300</span>
+                <span class="pill">q = 137.8 Pa</span>
+                <span class="pill">PLA material</span>
+              </div>
+
+              <div class="muted" style="margin-top:12px; font-size:13px; line-height:1.6">
+                Both wings operate in the low Reynolds number regime (10⁴–10⁵), characteristic of small UAVs and micro air vehicles. 3D-printed using Polylactic Acid with E = 3.5 GPa and yield strength of 50 MPa.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="margin-top:32px">
+          <div class="kicker"><span class="dot"></span> Key Results</div>
+          <h2 class="h1" style="font-size: clamp(26px, 3vw, 38px)">Performance comparison reveals complementary strengths.</h2>
+          <p class="lead">The Accordion wing excels in aerodynamic efficiency, while the Miura wing demonstrates superior structural rigidity.</p>
+        </div>
+
+        <div class="steps" style="margin-top:18px">
+          <div class="step reveal">
+            <div class="num">L/D</div>
+            <h3>Aerodynamic efficiency</h3>
+            <p><strong>Accordion: 12.86</strong> vs Miura: 9.12 at 5° AoA. The Accordion wing achieves 41% higher lift-to-drag ratio, enabling longer endurance and greater range.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">δ</div>
+            <h3>Structural rigidity</h3>
+            <p><strong>Miura: 0.27 mm</strong> vs Accordion: 81 mm deflection. The Miura wing is 300× stiffer, maintaining aerodynamic shape under load with minimal deformation.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">SF</div>
+            <h3>Safety margins</h3>
+            <p><strong>Miura: 161</strong> vs Accordion: 5.29 safety factor. Both designs are structurally safe, though Miura is significantly over-designed while Accordion operates closer to material limits.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="margin-top:24px">
+          <img src="assets/aerodynamic_comparison.png" alt="Aerodynamic performance comparison" style="width:100%; border-radius:var(--radius); border:1px solid rgba(255,255,255,.10); box-shadow:var(--shadow2)" loading="lazy" decoding="async"/>
+        </div>
+
+        <div class="grid" style="margin-top:24px">
+          <div class="card reveal">
+            <div class="pad">
+              <div class="mini">Miura-Ori Wing</div>
+              <h3 class="title">Exceptional rigidity, opportunity for weight reduction</h3>
+              <p class="muted">Superior structural performance with minimal deflection and extremely high safety margins.</p>
+
+              <div class="rail" style="margin-top:14px">
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>Performance Metrics</strong>
+                  <p>Wingspan: 150 mm | AR: 3.53 | Max L/D: 9.12 | Cruise lift: 0.285 N at 5° AoA</p>
+                </div>
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>Structural Properties</strong>
+                  <p>Max stress: 0.31 MPa | Deflection: 0.27 mm (0.54% chord) | Mass: 39.8 g</p>
+                </div>
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>Recommendation</strong>
+                  <p>Reduce thickness from 5 mm to 1.5 mm for 70% weight reduction while maintaining adequate safety (SF ≈ 14.5).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="pad">
+              <div class="mini">Accordion Wing</div>
+              <h3 class="title">Superior aerodynamics, requires reinforcement</h3>
+              <p class="muted">Excellent efficiency with 2.8× more lift generation but critical flexibility issues.</p>
+
+              <div class="rail" style="margin-top:14px">
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>Performance Metrics</strong>
+                  <p>Wingspan: 300 mm | AR: 7.06 | Max L/D: 12.86 | Cruise lift: 0.808 N at 5° AoA</p>
+                </div>
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>Structural Properties</strong>
+                  <p>Max stress: 9.46 MPa | Deflection: 81 mm (162% chord) | Mass: 31.9 g</p>
+                </div>
+                <div class="feature">
+                  <div class="glow"></div>
+                  <strong>Recommendation</strong>
+                  <p>Increase thickness from 2 mm to 5 mm to reduce deflection to ~5 mm (acceptable) while maintaining aerodynamic advantages.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal" style="margin-top:18px">
+          <div class="pad">
+            <div class="mini">Design selection matrix</div>
+            <h3 class="title">Mission-specific recommendations</h3>
+            <p class="muted">Neither design is universally superior—each excels in different operational domains.</p>
+
+            <div style="margin-top:14px; display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:12px">
+              <div class="feature">
+                <div class="glow"></div>
+                <strong>Choose Accordion (reinforced) for:</strong>
+                <p>Maximum endurance/range missions, payload capacity, manufacturing simplicity, efficiency-critical applications.</p>
+              </div>
+              <div class="feature">
+                <div class="glow"></div>
+                <strong>Choose Miura (optimized) for:</strong>
+                <p>Precision flight control, compact storage, gust tolerance, stability-critical missions, general-purpose UAV applications.</p>
+              </div>
+            </div>
+
+            <div class="muted" style="margin-top:14px; font-size:13px; line-height:1.6">
+              <strong>Key insight:</strong> Aspect ratio dominates aerodynamic performance (Accordion's AR=7.06 advantage), while thickness dominates structural performance (Miura's 5mm advantage). Optimal design requires balancing these parameters for specific mission requirements.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- MEDIA -->
     <section id="media">
       <div class="wrap">
         <div class="reveal">
           <div class="kicker"><span class="dot"></span> Media</div>
           <h2 class="h1" style="font-size: clamp(28px, 3.3vw, 44px)">Simulations (click to play)</h2>
-          <p class="lead">Videos open in a modal so the page stays clean. Add the “cinematic rendition” Vimeo link later.</p>
+          <p class="lead">Watch our folding wing mechanisms in action, from individual wing deployment sequences to full UAV integration.</p>
         </div>
 
         <div class="mediaGrid" style="margin-top:18px">
           <button class="videoCard reveal" data-video="1146229150" data-title="Full drone">
-            <div class="thumb">
+            <div class="thumb" style="background-image: url('https://vumbnail.com/1146229150.jpg'); background-size: cover; background-position: center;">
               <div class="play" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 7v10l8-5-8-5z" fill="currentColor"/></svg>
               </div>
@@ -707,7 +878,7 @@
           </button>
 
           <button class="videoCard reveal" data-video="1146229181" data-title="Wing unfold">
-            <div class="thumb">
+            <div class="thumb" style="background-image: url('https://vumbnail.com/1146229181.jpg'); background-size: cover; background-position: center;">
               <div class="play" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 7v10l8-5-8-5z" fill="currentColor"/></svg>
               </div>
@@ -719,7 +890,7 @@
           </button>
 
           <button class="videoCard reveal" data-video="1146229161" data-title="Wing fold">
-            <div class="thumb">
+            <div class="thumb" style="background-image: url('https://vumbnail.com/1146229161.jpg'); background-size: cover; background-position: center;">
               <div class="play" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 7v10l8-5-8-5z" fill="currentColor"/></svg>
               </div>
@@ -731,7 +902,7 @@
           </button>
 
           <button class="videoCard reveal" data-video="1146229171" data-title="Full action">
-            <div class="thumb">
+            <div class="thumb" style="background-image: url('https://vumbnail.com/1146229171.jpg'); background-size: cover; background-position: center;">
               <div class="play" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 7v10l8-5-8-5z" fill="currentColor"/></svg>
               </div>
@@ -743,7 +914,7 @@
           </button>
 
           <button class="videoCard reveal" data-video="1146232015" data-title="Cinematic rendition">
-            <div class="thumb">
+            <div class="thumb" style="background-image: url('https://vumbnail.com/1146232015.jpg'); background-size: cover; background-position: center;">
               <div class="play" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 7v10l8-5-8-5z" fill="currentColor"/></svg>
               </div>
@@ -753,17 +924,6 @@
               <p>Cinematic render — final polished sequence.</p>
             </div>
           </button>
-
-          <div class="card reveal">
-            <div class="pad">
-              <div class="mini">Tip</div>
-              <h3 class="title">Keep the page minimal.</h3>
-              <p class="muted">This layout reveals content on scroll and uses modals for videos. Replace Gallery placeholders with your best 8–12 images for maximum impact.</p>
-              <div class="actions">
-                <a class="btn ghost" href="https://vimeo.com/1146229150" target="_blank" rel="noopener">Open Vimeo page</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -774,7 +934,7 @@
         <div class="reveal">
           <div class="kicker"><span class="dot"></span> Gallery</div>
           <h2 class="h1" style="font-size: clamp(28px, 3.3vw, 44px)">Prototype photos + key plots</h2>
-          <p class="lead">Drop images into <span style="color:rgba(255,255,255,.88)">/assets</span> and we’ll wire them in as a lightbox grid. For now, placeholders keep the page from feeling “full” too early.</p>
+          <p class="lead">Physical prototypes, CAD models, and results visualization from our fabrication and testing process.</p>
         </div>
 
         <div class="gallery" style="margin-top:18px">
@@ -798,26 +958,23 @@
               <h2 class="h1" style="font-size: clamp(26px, 3vw, 40px)">Built by a cross-discipline group.</h2>
               <p class="lead">Mechanical design + CAD + prototyping + simulation — packaged into a shareable single-page portfolio.</p>
               <div class="pills">
-                <span class="pill">Madison Clark (MAE)</span>
-                <span class="pill">Hassan Khan (COS)</span>
-                <span class="pill">Renad Osman (CEE)</span>
-                <span class="pill">Keith Torpey (COS)</span>
+                <a class="pill" href = "https://www.linkedin.com/in/madison-clark27/">Madison Clark (MAE)</a>
+                <a class="pill" href = "https://www.linkedin.com/in/hassan-khan23/">Hassan Khan (COS)</a>
+                <a class="pill" href = "https://www.linkedin.com/in/renadosman/">Renad Osman (CEE)</a>
+                <a class="pill" href = "https://www.linkedin.com/in/keithtorpey/">Keith Torpey (COS)</a>
               </div>
             </div>
           </div>
 
           <div class="card reveal">
             <div class="pad">
-              <div class="mini">Share</div>
-              <h3 class="title">Make it public in 2 minutes</h3>
-              <p class="muted">Host with GitHub Pages / Netlify / Vercel. Keep videos on Vimeo, and store images locally in the repo for instant loads.</p>
+              <div class="mini">Resources</div>
+              <h3 class="title">Explore our work</h3>
+              <p class="muted">Complete documentation including detailed analysis, simulation results, and fabrication process.</p>
               <div class="actions">
-                <a class="btn primary" href="#media">Go to videos</a>
-                <a class="btn ghost" href="https://drive.google.com/file/d/1gA13fGIcZi83MZ1MW8vezeq-4QADIIhH/view?usp=sharing" target="_blank" rel="noopener">Paper PDF</a>
+                <a class="btn primary" href="#analysis">View analysis</a>
+                <a class="btn ghost" href="https://drive.google.com/drive/folders/1MoFphe4Oox3IFugKBD0qpfFRMDI1AX7V" target="_blank" rel="noopener">Project Drive</a>
               </div>
-              <p class="small" style="margin-top:12px">
-                If PDFs don’t open when hosted, confirm filenames match exactly and are in the same directory as <code>index.html</code>.
-              </p>
             </div>
           </div>
         </div>
@@ -838,8 +995,7 @@
           </div>
         </div>
         <div class="small">
-          Built as a single static page (HTML/CSS/JS).<br/>
-          Replace Gallery placeholders with your images when ready.
+          Princeton University • CEE 345 Final Project
         </div>
       </div>
     </div>
